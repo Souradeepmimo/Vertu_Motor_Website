@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .test {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+      }
+
+      ul {
+        list-style-position: inside;
+        padding: 0;
+      }
+
+      .top_text_new {
+        font-size: 30px;
+        color: white;
+      }
+
+      p {
+        display: inline-block;
+        margin: 0;
+      }
+
+      a {
+        color: black;
+        font-size: 14px;
+        font-display: bold;
+      }
+
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .round {
+        width: 100%;
+        border-radius: 15px;
+        padding: 5px 5px 5px 25px;
+        height: 20%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+      }
+
+      .heading_bmw {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .box {
+        width: 25%;
+        height: 80%;
+        border-radius: 10px;
+        margin: 0.6em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: 14px;
+      }
+
+      .stack_top {
+        position: absolute;
+        color: white;
+        width: 100%;
+        top: 15%;
+        left: 7%;
+        font-size: 90%;
+      }
+
+      .row {
+        background-color: white;;
+        margin: 10 px
+      }
+      .h-100{
+        height: 100%;
+      }
+      .time {
+        font-size: 30px;
+        color: white;
+        margin: 0px;
+      }
+
+      .top_text {
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .buttom_word {
+        font-size: 20px;
+        color: white;
+      }
+
+      .pad {
+        padding: 10px;
+      }
+
+      .grey {
+        background-color: black;
+      }
+      .grey1{
+        background-color: gray;
+      }
+
+      .button_drive {
+        background-color: blue;
+        color: white;
+      }
+
+      .button1 {
+        background-color: blue;
+        border: none;
+        color: black;
+        padding: 12px 30px;
+        ;
+        text-align: center;
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+      }
+
+      .overlay_container {
+        position: relative;
+      }
+      .carousel-control-next,
+      .carousel-control-prev /*, .carousel-indicators */ {
+         filter: invert(100%);
+}
+    </style>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-sm  justify-content-center">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo" style="width:200px;">
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Used Cars</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Servicing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Comercials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mobality</a>
+          </li>
+        </ul>
+        <form class="form-inline" action="">
+          <input type="text" name="search" class="round" placeholder="Search" />
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <i class="fa fa-map-marker"></i>
+            <a class="nav-link" href="#">Find Us</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-heart"></i>
+            <a class="nav-link" href="#">Save</a>
+          </li>
+          <li class="nav-item">
+            <i class="fa fa-user"></i>
+            <a class="nav-link" href="#">Login</a>
+          </li>
+      </nav>
+      <div class="overlay_container">
+        <img src="assets/MicrosoftTeams-image (4).png" alt="Logo" width="100%">
+        <div class="stack_top">
+          <span class="top_text"> Explore the new <br>BMW i4 range</br>
+          </span>
+          <br>
+          <span class="buttom_text_black" style="font-size: 120%">From the cool Trend and SUV-inspired Active <br>to the sporty ST-Line, the eighth generation <br>Fiesta impresses accross the range</br>
+          </span>
+          <br>
+          <p>
+            <button class="button1">Book A Test Drive</button>
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class="row heading_bmw justify-content-center">
+        <p>BMW i4 trims</p>
+      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="card box  h-100">
+                <img src="assets/MicrosoftTeams-image (2).png" alt="Logo">
+                <div class="container justify-content-center">
+                  <h5>
+                    <b>M 50</b>
+                  </h5>
+                  <p>From $65,795</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Sun Proctection Glass</li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Adaptive M suspension</li>
+                    <li>Storage for M suspension</li>
+                    <li>Cruise Control for brake assist</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card box  h-100 ">
+                <img src="assets/MicrosoftTeams-image (1).png" alt="Logo">
+                <div class="container">
+                  <h5>
+                    <b>M Sport </b>
+                  </h5>
+                  <p>From $54,980</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Rain sensor including auto headlights </li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Standard suspension</li>
+                    <li>Electric Power Stering(EPS) with Servotronic</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card box  h-100">
+                <img src="assets/MicrosoftTeams-image.png" alt="Logo">
+                <div class="container">
+                  <h5>
+                    <b> Sport </b>
+                  </h5>
+                  <p>From $53,480</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Rain sensor including auto headlights </li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Standard suspension</li>
+                    <li>Electric Power Stering(EPS) with Servotronic</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="row justify-content-center">
+              <div class="card box  h-100">
+                <img src="assets/MicrosoftTeams-image (2).png" alt="Logo">
+                <div class="container justify-content-center">
+                  <h5>
+                    <b>M 50</b>
+                  </h5>
+                  <p>From $65,795</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Sun Proctection Glass</li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Adaptive M suspension</li>
+                    <li>Storage for M suspension</li>
+                    <li>Cruise Control for brake assist</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card box  h-100 ">
+                <img src="assets/MicrosoftTeams-image (1).png" alt="Logo">
+                <div class="container">
+                  <h5>
+                    <b>M Sport </b>
+                  </h5>
+                  <p>From $54,980</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Rain sensor including auto headlights </li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Standard suspension</li>
+                    <li>Electric Power Stering(EPS) with Servotronic</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card box  h-100">
+                <img src="assets/MicrosoftTeams-image.png" alt="Logo">
+                <div class="container">
+                  <h5>
+                    <b> Sport </b>
+                  </h5>
+                  <p>From $53,480</p>
+                  <ul class="p">
+                    <li>Velour floor mats</li>
+                    <li>Rain sensor including auto headlights </li>
+                    <li>Automatic Stability Control (ASC)</li>
+                    <li>Standard suspension</li>
+                    <li>Electric Power Stering(EPS) with Servotronic</li>
+                    <li>Automatic taligate operation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+      </div>
+      <br>
+      <br>
+          <div class="row pad grey1">
+            <div class="col pad">
+              <span class="top_text">
+                <br> Explore the new <br>BMW i4 range</br>
+              </span>
+              <br>
+              <span class="buttom_text_black" style="font-size: 120%">From the cool Trend and SUV-inspired Active <br>to the sporty ST-Line, the eighth generation <br>Fiesta impresses accross the range</br>
+              </span>
+              <br>
+              <p>
+                <button class="button1">Request a personalised video</button>
+              </p>
+            </div>
+            <div class="col pad">
+              <img src="assets/MicrosoftTeams-image (6).png" width="100%">
+            </div>
+          </div>
+          <br>
+          <div class="row grey">
+            <div class="col pad">
+              <br>
+              <img src="assets/MicrosoftTeams-image (5).png" width="100%">
+            </div>
+            <div class="col pad">
+              <span class="top_text_new">
+                <br> Electrifying performance <br>with BMW i4 range</br>
+              </span>
+              <span class="buttom_word" style="font-size: 120%">From the cool Trend and SUV-inspired Active <br>to the sporty ST-Line, the eighth generation <br>Fiesta impresses accross the range <br>
+                <br>
+                <div class="row grey">
+                  <div class="col">
+                    <span class="time">02:05 hr</span>
+                    <div class="grey">
+                      <span class="buttom_word" style="font-size: 100%">Charging for at home for a <br>Range of 62 miles </span>
+                      <br>
+                      <br>
+                      <button class="button_drive">Book a Test Drive</button>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="time">365</span>
+                    <div class=" grey">
+                      <span class="buttom_word" style="font-size: 100%">Electric range in miles</span>
+                    </div>
+                  </div>
+                  <br>
+  </body>
+</html>
